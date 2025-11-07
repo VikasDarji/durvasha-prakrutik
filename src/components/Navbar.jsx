@@ -20,11 +20,11 @@ const Navbar = () => {
         <div className="flex items-center gap-2 cursor-pointer animate-fadeIn">
           <img
             src={Logo}
-            alt="React Logo"
+            alt="Durvasha-prakrutik Logo"
             className="w-10 h-10 object-contain transition-all duration-500 hover:scale-110 hover:drop-shadow-[0_0_10px_#00d8ff]"
           />
           <span className="text-xl md:text-2xl font-semibold text-white drop-shadow-[0_0_6px_#00d8ff]">
-            DurvashaPrakrutik
+          
           </span>
         </div>
 
