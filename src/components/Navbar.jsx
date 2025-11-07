@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Logo from "../assets/react.svg"; // Import your SVG file
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,9 +15,17 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/10 border-b border-white/20 shadow-lg transition-all duration-500">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <div className="text-2xl font-extrabold tracking-wide text-white drop-shadow-[0_0_8px_#0ff] cursor-pointer animate-fadeIn">
-          ✨ MyCreativeSite
+        
+        {/* 🌟 Logo Section */}
+        <div className="flex items-center gap-2 cursor-pointer animate-fadeIn">
+          <img
+            src={Logo}
+            alt="React Logo"
+            className="w-10 h-10 object-contain transition-all duration-500 hover:scale-110 hover:drop-shadow-[0_0_10px_#00d8ff]"
+          />
+          <span className="text-xl md:text-2xl font-semibold text-white drop-shadow-[0_0_6px_#00d8ff]">
+            DurvashaPrakrutik
+          </span>
         </div>
 
         {/* Desktop Links */}
