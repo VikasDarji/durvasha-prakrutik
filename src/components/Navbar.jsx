@@ -24,7 +24,7 @@ const Navbar = () => {
             className="w-12 h-12 object-contain transition-all duration-500 hover:scale-110 hover:drop-shadow-[0_0_15px_#00ffff] glow-logo"
           />
           <span className="text-xl md:text-2xl font-semibold text-white drop-shadow-[0_0_8px_#00ffff]">
-            Durvasha-Prakritik
+            Durvasha-Prakrutik
           </span>
         </div>
 
