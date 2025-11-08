@@ -1,0 +1,120 @@
+.home-container {
+  padding: 30px 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: #25d27f;
+  color: #333;
+}
+
+/* === HERO SECTION === */
+.hero {
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(0.8);
+  transition: transform 0.6s ease;
+}
+
+.hero:hover .hero-img {
+  transform: scale(1.05);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(48, 227, 188);
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  text-shadow: 2px 2px 8px rgba(8, 132, 84, 0.5);
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+/* === ABOUT SECTION === */
+.about-agriculture {
+  background: #4c725d63;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-agriculture:hover {
+  transform: translateY(-5px);
+}
+
+.about-agriculture h2 {
+  color: #1b331d;
+  margin-bottom: 15px;
+}
+
+/* === FARMING CARDS === */
+.farming-section h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 25px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.farm-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+}
+
+.farm-card h3 {
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.farm-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.farm-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .hero-img {
+    height: 250px;
+    object-fit: cover;
+  
+  }
+  img{
+    object-fit: cover;
+  }
+}

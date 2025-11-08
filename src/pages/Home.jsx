@@ -1,14 +1,70 @@
 import React from "react";
-
+import logo from "../assets/logo2.png"
+import "./Home.css"
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-white animate-fadeIn">
-      <h1 className="text-5xl font-bold drop-shadow-[0_0_10px_#00fff2] mb-4">
-        Welcome Home 🏡
-      </h1>
-      <p className="text-lg text-gray-300">
-        Discover futuristic design with glassmorphism and neon effects!
-      </p>
+     <div className="home-container">
+      {/* Hero Section */}
+      <section className="hero">
+        <img src={logo} alt="Farm field" className="hero-img"  />
+        <div className="hero-text">
+          <h1>Welcome to AgriWorld</h1>
+          <p>Empowering Farmers, Sustaining the Future</p>
+        </div>
+      </section>
+
+      {/* About Agriculture */}
+      <section className="about-agriculture">
+        <h2>About Agriculture</h2>
+        <p>
+          Agriculture is the foundation of human civilization, providing food,
+          raw materials, and employment. Modern agriculture combines technology
+          and sustainability to increase productivity while preserving nature.
+        </p>
+        <p>
+          With innovations like smart irrigation, drone technology, and organic
+          practices, today’s farmers are shaping a greener and more secure
+          future for everyone.
+        </p>
+      </section>
+
+      {/* Farming Cards Section */}
+      <section className="farming-section">
+        <h2>Types of Farming</h2>
+        <div className="card-container">
+          <div className="farm-card">
+            <h3>Organic Farming</h3>
+            <p>
+              Focuses on natural fertilizers and eco-friendly techniques to
+              maintain soil health and biodiversity.
+            </p>
+          </div>
+
+          <div className="farm-card">
+            <h3>Mixed Farming</h3>
+            <p>
+              Combines crop cultivation and livestock rearing, ensuring balance
+              between food and animal production.
+            </p>
+          </div>
+
+          <div className="farm-card">
+            <h3>Modern Farming</h3>
+            <p>
+              Uses advanced technologies such as AI, drones, and precision
+              irrigation to improve yield and efficiency.
+            </p>
+          </div>
+
+          <div className="farm-card">
+            <h3>Subsistence Farming</h3>
+            <p>
+              Traditional method where farmers grow food mainly for their own
+              family’s consumption.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
