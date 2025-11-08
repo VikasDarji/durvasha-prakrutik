@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="footer-section fade-in delay-2">
           <h3>Contact</h3>
           <p>📞 +91 90237 56982</p>
-          <p>📧 support@business.com</p>
+          <p>📧 techstrote@gmail.com</p>
         </div>
 
         {/*Address Info */}
