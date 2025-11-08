@@ -31,13 +31,18 @@ const Footer = () => {
         {/* 📞 Contact Info */}
         <div className="footer-section fade-in delay-2">
           <h3>Contact</h3>
-          <p>📍 Vadodara, Gujarat, India</p>
           <p>📞 +91 90237 56982</p>
           <p>📧 support@business.com</p>
         </div>
 
+        {/*Address Info */}
+        <div className="footer-section fade-in delay-3">
+          <h3>Address</h3>
+          <p>📍 Vadodara, Gujarat, India</p>
+        </div>
+
         {/* 🌐 Social Media */}
-        <div className="footer-section social fade-in delay-3">
+        <div className="footer-section social fade-in delay-4">
           <h3>Follow Us</h3>
           <div className="social-icons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
