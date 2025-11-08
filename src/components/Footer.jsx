@@ -10,7 +10,7 @@ const Footer = () => {
         
         {/* 🌿 Brand Section */}
         <div className="footer-section fade-in">
-          <img src={logo2} alt="durvasha-Prakrutik"></img> 
+          <img src={logo2} alt="durvasha-Prakrutik" className="footer_logo"></img> 
           <p>
             Your trusted source for natural and organic products.
             We deliver quality and care — straight from nature to you.

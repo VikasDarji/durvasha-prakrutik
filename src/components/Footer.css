@@ -131,11 +131,10 @@
     justify-content: center;
   }
 }
-img{
+.footer_logo{
   max-width: 7REM;
     height: 5rem;
     height: auto;
     padding-bottom: 22px;
     padding-left: 20px;
-
-}
+  }
