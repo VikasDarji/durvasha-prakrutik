@@ -12,7 +12,9 @@ export default function Home() {
         <div className="hero-text">
           <h1>Welcome to AgriWorld</h1>
           <p>Empowering Farmers, Sustaining the Future</p>
+         <a href="/Contact">
           <button className="hero-btn">Explore More</button>
+          </a>
         </div>
       </section>
 
