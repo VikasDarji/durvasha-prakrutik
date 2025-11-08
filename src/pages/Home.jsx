@@ -1,20 +1,23 @@
 import React from "react";
-import logo from "../assets/logo2.png"
-import "./Home.css"
+import logo from "../assets/logo2.png";
+import "./Home.css";
+
 export default function Home() {
   return (
-     <div className="home-container">
-      {/* Hero Section */}
-      <section className="hero">
-        <img src={logo} alt="Farm field" className="hero-img"  />
+    <div className="home-container">
+      {/* 🌾 Hero Section */}
+      <section className="hero-section">
+        <img src={logo} alt="Agri field" className="hero-img" />
+        <div className="hero-overlay"></div>
         <div className="hero-text">
           <h1>Welcome to AgriWorld</h1>
           <p>Empowering Farmers, Sustaining the Future</p>
+          <button className="hero-btn">Explore More</button>
         </div>
       </section>
 
-      {/* About Agriculture */}
-      <section className="about-agriculture">
+      {/* 🌱 About Agriculture */}
+      <section className="about-agriculture fade-in">
         <h2>About Agriculture</h2>
         <p>
           Agriculture is the foundation of human civilization, providing food,
@@ -28,8 +31,8 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Farming Cards Section */}
-      <section className="farming-section">
+      {/* 🚜 Farming Cards */}
+      <section className="farming-section fade-in">
         <h2>Types of Farming</h2>
         <div className="card-container">
           <div className="farm-card">
