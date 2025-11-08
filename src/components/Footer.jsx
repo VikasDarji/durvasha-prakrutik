@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import "./Footer.css";
+import logo2 from "../assets/logo2.png"
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         
         {/* 🌿 Brand Section */}
         <div className="footer-section fade-in">
-          <h2 className="footer-logo">Durvasha Prakrutik</h2>
+          <img src={logo2} alt="durvasha-Prakrutik"></img> 
           <p>
             Your trusted source for natural and organic products.
             We deliver quality and care — straight from nature to you.
