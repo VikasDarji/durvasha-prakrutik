@@ -45,10 +45,10 @@ const Footer = () => {
         <div className="footer-section social fade-in delay-4">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/people/Tech-Strota/61550062532070/" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/techstrota?igsh=MWdmNWp5ODludW4xcw==" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">

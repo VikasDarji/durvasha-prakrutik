@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import "./Contact.css"; // ✅ link CSS file
+import "./Contact.css";
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -23,17 +23,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
-      <h2 className="contact-title">Contact Us</h2>
-      
+    <div className="contact-page">
+      <h2 className="contact-heading">Contact Us</h2>
+     
 
-      <div className="contact-wrapper">
-        {/* Contact Form */}
-        <form onSubmit={handleSubmit} className="contact-form">
-          <h3>Submited Your Data</h3>
-          <p className="contact-text">
-            We’d love to hear from you! Fill out the form below and we’ll get in touch soon.
-          </p>
+      <div className="contact-grid">
+        {/* Left - Contact Form */}
+        
+        <form onSubmit={handleSubmit} className="contact-box form-box">
+          <h2>Send Us a Message</h2>
 
           <label>Full Name</label>
           <input
@@ -42,7 +40,7 @@ const Contact = () => {
             required
             value={formData.name}
             onChange={handleChange}
-            placeholder="Enter your name"
+            placeholder="Enter your full name"
           />
 
           <label>Email Address</label>
@@ -72,7 +70,7 @@ const Contact = () => {
             required
             value={formData.subject}
             onChange={handleChange}
-            placeholder="Enter your subject"
+            placeholder="Enter subject"
           />
 
           <label>Message</label>
@@ -84,24 +82,29 @@ const Contact = () => {
             placeholder="Type your message..."
           ></textarea>
 
-          <button type="submit">Submit</button>
+          <button type="submit" className="submit-btn">Send Message</button>
         </form>
 
-        {/* Contact Info */}
-        <div className="contact-info">
-          <h3>Contact Us</h3>
+        {/* Right - Contact Info */}
+        <div className="contact-box info-box">
+          <h3>Contact Information</h3>
+
           <div className="info-item">
             <FaPhoneAlt className="icon" />
             <p>+91 90237 56982</p>
           </div>
+
           <div className="info-item">
             <FaEnvelope className="icon" />
             <p>support@business.com</p>
           </div>
+
           <div className="info-item">
             <FaMapMarkerAlt className="icon" />
             <p>Vadodara, Gujarat, India</p>
           </div>
+
+          <div className="glow-circle"></div>
         </div>
       </div>
     </div>
