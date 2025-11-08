@@ -1,0 +1,117 @@
+/* 🌐 Footer Styling */
+
+.footer {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 3px solid #236226; 
+  padding-top: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🧾 Footer Container Layout */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.5rem;
+  gap: 2rem;
+}
+
+/* 🧩 Individual Footer Section */
+.footer-section {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #236226;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #236226;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 0.95rem;
+  color: #000000;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #236226;
+  text-decoration: underline;
+}
+
+/* 🔗 Quick Links List */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* 🌐 Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #236226;
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #236226;
+  transform: scale(1.1);
+}
+
+/* 🧍 Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 1rem;
+  background-color: #236226;
+  color: white;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-section {
+    min-width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
+}
