@@ -1,117 +1,133 @@
-/* 🌐 Footer Styling */
-
 .footer {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 3px solid #236226; 
-  padding-top: 2rem;
-  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #001f3f, #002b55, #003366, #004080);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  color: white;
+  padding: 60px 20px 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
 
-/* 🧾 Footer Container Layout */
+/* Container grid */
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
   max-width: 1200px;
-  margin: auto;
-  padding: 0 1.5rem;
-  gap: 2rem;
+  margin: 0 auto;
 }
 
-/* 🧩 Individual Footer Section */
+/* Section Styles */
 .footer-section {
-  flex: 1 1 220px;
-  min-width: 220px;
+  text-align: left;
+  animation: fadeIn 2s ease forwards;
 }
 
 .footer-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #236226;
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: cyan;
+  text-shadow: 0 0 10px #00ffff;
+  margin-bottom: 10px;
 }
 
 .footer-section h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
-  color: #236226;
+  font-size: 1.3rem;
+  color: #00ffff;
+  margin-bottom: 15px;
 }
 
 .footer-section p,
-.footer-section a {
-  font-size: 0.95rem;
-  color: #000000;
+.footer-section li a {
+  color: #b8e9ff;
+  font-size: 1rem;
   line-height: 1.6;
-  text-decoration: none;
+  transition: 0.3s ease;
 }
 
-.footer-section a:hover {
-  color: #236226;
-  text-decoration: underline;
-}
-
-/* 🔗 Quick Links List */
 .footer-section ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-.footer-section ul li {
-  margin-bottom: 0.4rem;
+.footer-section li {
+  margin-bottom: 8px;
 }
 
-/* 🌐 Social Media Icons */
+/* Hover Effects */
+.footer-section a:hover {
+  color: cyan;
+  text-shadow: 0 0 8px #00ffff;
+  padding-left: 4px;
+}
+
+/* Social Icons */
 .social-icons {
   display: flex;
-  gap: 0.8rem;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .social-icons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #236226;
-  color: #ffffff;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: #b8e9ff;
+  font-size: 1.4rem;
+  transition: 0.4s ease;
 }
 
 .social-icons a:hover {
-  background-color: #236226;
-  transform: scale(1.1);
+  color: cyan;
+  transform: scale(1.2);
+  text-shadow: 0 0 10px cyan;
 }
 
-/* 🧍 Footer Bottom */
+/* Footer Bottom */
 .footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid rgba(0, 255, 255, 0.3);
   text-align: center;
-  padding: 1rem;
-  background-color: #236226;
-  color: white;
-  margin-top: 2rem;
-  font-size: 0.9rem;
+  padding-top: 15px;
+  font-size: 0.95rem;
+  color: #b8e9ff;
 }
 
-/* 📱 Responsive Design */
+.highlight {
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+/* Background Gradient Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay classes for staggered fade-in */
+.fade-in.delay-1 { animation-delay: 0.4s; }
+.fade-in.delay-2 { animation-delay: 0.8s; }
+.fade-in.delay-3 { animation-delay: 1.2s; }
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
+  .footer {
     text-align: center;
-    align-items: center;
   }
-
   .footer-section {
-    min-width: 100%;
+    text-align: center;
   }
-
   .social-icons {
     justify-content: center;
-  }
-
-  .footer-bottom {
-    font-size: 0.85rem;
   }
 }

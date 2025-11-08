@@ -6,8 +6,9 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Brand / About */}
-        <div className="footer-section">
+        
+        {/* 🌿 Brand Section */}
+        <div className="footer-section fade-in">
           <h2 className="footer-logo">Durvasha Prakrutik</h2>
           <p>
             Your trusted source for natural and organic products.
@@ -15,27 +16,28 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
-        <div className="footer-section">
+        {/* 🔗 Quick Links */}
+        <div className="footer-section fade-in delay-1">
           <h3>Quick Links</h3>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
-        {/* <li><a href="/services">Services</a></li> */}
+            <li><a href="/services">Services</a></li>
+            <li><a href="/blog">Blog</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
 
-        {/* Contact Info */}
-        <div className="footer-section">
+        {/* 📞 Contact Info */}
+        <div className="footer-section fade-in delay-2">
           <h3>Contact</h3>
           <p>📍 Vadodara, Gujarat, India</p>
           <p>📞 +91 90237 56982</p>
           <p>📧 support@business.com</p>
         </div>
 
-        {/* Social Links */}
-    {/* <div className="footer-section social">
+        {/* 🌐 Social Media */}
+        <div className="footer-section social fade-in delay-3">
           <h3>Follow Us</h3>
           <div className="social-icons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -48,11 +50,12 @@ const Footer = () => {
               <FaLinkedinIn />
             </a>
           </div>
-        </div>*/}  
+        </div>
       </div>
 
+      {/* 💫 Footer Bottom */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Made by Team-1 | All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} Made by <span className="highlight">Team-1</span> | All Rights Reserved.</p>
       </div>
     </footer>
   );
